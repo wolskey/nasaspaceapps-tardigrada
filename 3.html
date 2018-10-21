@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="content-type" content="text/html">
+        <meta name="author" content="Adrian Pluto-Prondziński">
+        <meta name="robots" content="index, follow">
+        
+        <title>Golden Record Remix</title>
+        
+        <meta name="description" content="Golden Record Remix">
+        <meta name="keywords" content="NASA, Space Apps Challenge Gdańsk, Golden Record Remix, Time Capsule, Photo by Jeremy Thomas on Unsplash">
+        
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" media="screen and (min-width: 0px) and (max-width: 481px)" href="mobile481.css">
+        <link rel="stylesheet" media="screen and (min-width: 482px) and (max-width: 800px)" href="mobile720.css">
+
+        <script
+                src="https://code.jquery.com/jquery-3.3.1.js"
+                integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+                crossorigin="anonymous">
+        </script>
+        <script src="script.js"></script>
+
+    </head>
+    
+    <body>
+        <script>
+var end = new Date('11/09/2022 10:1 AM');
+
+    var _second = 1000;
+    var _minute = _second * 60;
+    var _hour = _minute * 60;
+    var _day = _hour * 24;
+    var _year = _day * 365;
+    var timer;
+
+    function showRemaining() {
+        var now = new Date();
+        var distance = end - now;
+        if (distance < 0) {
+
+            clearInterval(timer);
+            document.getElementById('countdown').innerHTML = 'EXPIRED!';
+
+            return;
+        }
+        var years = Math.floor(distance / _year);
+        var days = Math.floor(distance % _year / _day);
+        var hours = Math.floor((distance % _day) / _hour);
+        var minutes = Math.floor((distance % _hour) / _minute);
+        var seconds = Math.floor((distance % _minute) / _second);
+        document.getElementById('countdown').innerHTML = years + 'y ';
+        document.getElementById('countdown').innerHTML += days + 'd ';
+        document.getElementById('countdown').innerHTML += hours + 'h ';
+        document.getElementById('countdown').innerHTML += minutes + 'm ';
+        document.getElementById('countdown').innerHTML += seconds + 's';
+    }
+
+    timer = setInterval(showRemaining, 1000);
+</script>
+        <header><div id="123">&nbsp;</div>Goodbye message will be sent in <div id="countdown"></div></header>
+        <aside>
+            <section>     
+                <div id="empty">s</div>
+                <div class="holder"><a href="4.html" class="a">Send</a></div>
+                <div id="dropfilebox">
+                    <span id="info_load">Upuść tutaj plik...</span>
+            
+                    <div id="preview_contener">
+                    <img id="preview" src="loader.gif">
+              
+                </div>
+            
+            </div>            
+            </section>
+
+        </aside>
+        <footer>
+            <h1><center>TARDIGRADA Team</center></h1>
+        </footer>
+    
+    </body>
+</html>

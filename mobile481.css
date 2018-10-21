@@ -1,0 +1,238 @@
+*
+{
+    margin: 0% auto;
+    padding: 0px;
+}
+body
+{
+    max-width: 481px;
+    padding: 0.25%;
+    background: linear-gradient(#fff,#999);
+    -webkit-box-shadow: 10px 10px 65px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 65px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 65px 0px rgba(0,0,0,0.75);
+}
+
+div.gallery {
+    margin: 5px;
+    border: 2px solid #999;
+    float: left;
+    width: 180px;
+}
+
+div.gallery:hover {
+    border: 2px solid #555;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+#playbutton
+{
+	
+    height: 200px;
+    width: 300px;
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+    background-image:url(pics/play.png);
+	background-position: 40px; 
+}
+#playbutton:hover
+{
+    background-image: url(pics/play_gray.png);
+    transition: 0.5s;
+}
+#long
+{
+    height: 900px;
+}
+#countdown
+{
+    font-size: 35px;
+}
+
+header
+{
+    height: 140px;
+    width: 100%;
+    background-image: url(baner1024.jpg);
+    background-repeat: repeat-x;
+    position: relative;
+    background-position: right;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+article
+{
+    height: 300px;
+    width: 100%;
+    display: table;
+    background-color: aqua;
+}
+footer
+{
+    height: 200px;
+    width: 100%;
+}
+.input
+{
+    width: 500px; 
+    border: 2px solid aqua;
+    text-align: left;
+    text-overflow: auto;
+    margin-top: 30px;
+    margin-left: 25%;
+}
+#button
+{
+    border-radius: 10px;
+}
+#button:hover
+{
+    cursor: pointer;
+    
+}
+section
+{
+    width: 100%;
+    height: 720px;
+}
+#dropfilebox
+{
+    height: 400px;
+    width: 400px;
+    border: 3px solid grey;
+}
+#dropfilebox:hover
+{
+    cursor:wait;
+}
+#end
+{
+    visibility: hidden;
+}
+.holder
+{
+    padding: 20px;
+    float: left;
+    position: absolute;
+}
+.a
+{
+    padding-bottom: 7px;
+    padding-top: 7px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 2px solid grey;
+    text-decoration: none;
+    display: block;
+    background-color: aqua;
+}
+#empty
+{
+    height: 70px;
+    visibility: hidden;
+}
+#preview
+{
+    margin-left: 90px;
+    margin-top: 70px;
+}
+#gif
+{
+    margin-left: 37%;
+}
+h2
+{
+    font-size: 60px;
+    text-align: center;
+    animation-name: pulse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes pulse
+{
+    0%
+    {
+        color: royalblue;
+    }
+    50%
+    {
+        color: #444;
+    }
+    100%
+    {
+        color: royalblue;
+    }
+}
+#picture1
+{
+    height: 300px;
+    width: 231px;
+    background-image: url(a.png);
+    background-repeat: no-repeat;
+    float: left;
+    margin-left: 75px;
+    -webkit-box-shadow: 10px 10px 95px 11px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 95px 11px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 95px 11px rgba(0,0,0,0.75);
+}
+#picture2
+{
+    height: 300px;
+    width: 231px;
+    background-image: url(b.png);
+    background-repeat: no-repeat;
+    float: left;
+    margin-left: 75px;
+    -webkit-box-shadow: 10px 10px 95px 11px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 95px 11px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 95px 11px rgba(0,0,0,0.75);
+}
+#picture3
+{
+    height: 300px;
+    width: 231px;
+    background-image: url(c.png);
+    background-repeat: no-repeat;
+    float: left;
+    margin-left: 75px;
+    -webkit-box-shadow: 10px 10px 95px 11px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 95px 11px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 95px 11px rgba(0,0,0,0.75);
+}
+#picture1:hover
+{
+    background-image: url(a1.png);
+    transition: 0.5s;
+    -webkit-box-shadow: 10px 10px 204px 34px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 204px 34px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 204px 34px rgba(0,0,0,0.75);
+}
+#picture2:hover
+{
+    background-image: url(b1.png);
+    transition: 0.5s;
+    -webkit-box-shadow: 10px 10px 204px 34px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 204px 34px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 204px 34px rgba(0,0,0,0.75);
+}
+#picture3:hover
+{
+    background-image: url(c1.png);
+    transition: 0.5s;
+    -webkit-box-shadow: 10px 10px 204px 34px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 204px 34px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 204px 34px rgba(0,0,0,0.75);
+}
+#123
+{
+    padding: 20px;
+}
