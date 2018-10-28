@@ -24,44 +24,10 @@
     </head>
     
     <body>
-        <script>
-var end = new Date('11/09/2022 10:1 AM');
-
-    var _second = 1000;
-    var _minute = _second * 60;
-    var _hour = _minute * 60;
-    var _day = _hour * 24;
-    var _year = _day * 365;
-    var timer;
-
-    function showRemaining() {
-        var now = new Date();
-        var distance = end - now;
-        if (distance < 0) {
-
-            clearInterval(timer);
-            document.getElementById('countdown').innerHTML = 'EXPIRED!';
-
-            return;
-        }
-        var years = Math.floor(distance / _year);
-        var days = Math.floor(distance % _year / _day);
-        var hours = Math.floor((distance % _day) / _hour);
-        var minutes = Math.floor((distance % _hour) / _minute);
-        var seconds = Math.floor((distance % _minute) / _second);
-        document.getElementById('countdown').innerHTML = years + 'y ';
-        document.getElementById('countdown').innerHTML += days + 'd ';
-        document.getElementById('countdown').innerHTML += hours + 'h ';
-        document.getElementById('countdown').innerHTML += minutes + 'm ';
-        document.getElementById('countdown').innerHTML += seconds + 's';
-    }
-
-    timer = setInterval(showRemaining, 1000);
-</script>
         <header><div id="123">&nbsp;</div>Goodbye message will be sent in <div id="countdown"></div></header>
         <aside>
             <section>
-                <div id="empty">s</div>
+                <div id="empty">&nbsp;</div>
                 <a href="3.html"><div id="picture1"></div></a>
                 <a href="3.html"><div id="picture2"></div></a>
                 <a href="3.html"><div id="picture3"></div></a>
